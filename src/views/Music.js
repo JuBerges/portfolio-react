@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
-import Button from "../components/BackButton";
+import BackButton from "../components/BackButton";
 
 function Music() {
     return (
         <div>
-            <h1>Music</h1>
-            <Link to={"/"}>
-                <Button label="Home" />
-            </Link>
+            <BackButton />
+            <div className="text-center">
+                <h1 className="blackops">MUSIQUE</h1>
+            </div>
         </div>
     );
 }
