@@ -1,0 +1,79 @@
+/* ./src/index.css */
+body {
+    background: black;
+    color: #f2f2f2;
+}
+
+/*! @import */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* blackops FONT just use the 'blackops' class */
+.bottom {
+    position: absolute;
+    bottom: 0;
+}
+.blackops {
+    font-family: "Black Ops One";
+}
+@font-face {
+    font-family: "Black Ops One";
+    src: url("/src/assets/fonts/BlackOpsOne-Regular.ttf");
+}
+/* GLOWING TEXT */
+.glow {
+    color: #fff;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+        text-shadow: 0 0 0px #fff, 0 0 10px;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    }
+}
+@media (min-width: 1024px) {
+    /* here DESKTOP only */
+}
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* GLASS EFFECT */
+.glass {
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+    background: inherit;
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+.glass:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: inherit;
+    margin: -20px;
+    box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.5);
+}
+/* CODE EXTRACT FOR VIOLET GLOW */
+/* .glow-ut {
+    color: #fff;
+    animation: glow-ut 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow-ut {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+} */

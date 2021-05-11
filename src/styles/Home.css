@@ -1,0 +1,60 @@
+button {
+    padding: 10px 30px;
+}
+.mod {
+    filter: contrast(75%);
+    filter: drop-shadow(10px 10px 10px #dc2626);
+}
+.entrance {
+    transform: translateY(-1000px);
+    animation: entering-up 1500ms ease-in both;
+}
+.ent-left {
+    transform: translateX(-1000px);
+    animation: entering-left 1500ms ease-in both;
+}
+.ent-right {
+    transform: translateX(1000px);
+    animation: entering-right 1500ms ease-in both;
+}
+.ent-down {
+    transform: translateY(1000px);
+    animation: entering-down 1500ms ease-in both;
+}
+@keyframes entering-up {
+    0% {
+        transform: translateY(-1000px);
+        filter: none;
+    }
+    95% {
+        transform: translateY(0);
+        filter: drop-shadow(5px 5px 5px #dc2626);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes entering-left {
+    from {
+        transform: translateX(-1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes entering-right {
+    from {
+        transform: translateX(1000px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes entering-down {
+    from {
+        transform: translateY(1000px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
