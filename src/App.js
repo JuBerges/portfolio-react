@@ -2,11 +2,11 @@ import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
 
-const Home = lazy(() => import("./pages/Home.js.js"));
-const About = lazy(() => import("./pages/About.js.js"));
-const Music = lazy(() => import("./pages/Music.js.js"));
+const Home = lazy(() => import("./pages/Home.js"));
+const About = lazy(() => import("./pages/About.js"));
+const Music = lazy(() => import("./pages/Music.js"));
 const Contact = lazy(() => import("./pages/Contact.js"));
-const NotFound = lazy(() => import("./pages/NotFound.js.js"));
+const NotFound = lazy(() => import("./pages/NotFound.js"));
 
 const App = () => {
     return (
