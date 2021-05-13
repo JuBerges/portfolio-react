@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import * as ROUTES from "./constants/routes";
 
 const Home = lazy(() => import("./pages/Home.js"));
