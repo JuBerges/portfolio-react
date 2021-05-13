@@ -1,5 +1,4 @@
-import BackButton from "../components/BackButton";
-import Input from "../components/Input";
+import { BackButton, Input } from "../components/index";
 
 function Music() {
     return (

@@ -1,4 +1,4 @@
-import BackButton from "../components/BackButton";
+import { BackButton, Bio } from "../components/index";
 
 function About() {
     return (
@@ -6,6 +6,7 @@ function About() {
             <BackButton />
             <div className="text-center">
                 <h1 className="blackops">INFOS</h1>
+                <Bio />
             </div>
         </div>
     );

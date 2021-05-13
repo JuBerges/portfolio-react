@@ -1,8 +1,6 @@
 import { useEffect } from "react";
 
-import BackButton from "../components/BackButton";
-import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
+import { BackButton, ContactForm, Footer } from "../components/index";
 
 function Contact() {
     useEffect(() => {

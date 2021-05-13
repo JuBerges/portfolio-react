@@ -1,11 +1,7 @@
 import { useEffect } from "react";
 
 import "../styles/Home.css";
-
-import SocialNav from "../components/SocialNav";
-import DeaLogo from "../components/DeaLogo";
-import NavBar from "../components/NavBar";
-import Footer from "../components/Footer";
+import { SocialNav, DeaLogo, NavBar, Footer } from "../components/index";
 
 function Home() {
     useEffect(() => {

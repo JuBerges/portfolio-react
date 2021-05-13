@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import Input from "./Input";
+import { Input } from "./index";
 
 export default function ContactForm() {
     useEffect(() => {
