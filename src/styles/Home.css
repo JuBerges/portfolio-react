@@ -3,7 +3,7 @@ button {
 }
 .mod {
     filter: contrast(75%);
-    filter: drop-shadow(10px 10px 10px #dc2626);
+    filter: drop-shadow(10px 10px 10px #6b7280);
 }
 .entrance {
     transform: translateY(-1000px);
@@ -28,7 +28,7 @@ button {
     }
     95% {
         transform: translateY(0);
-        filter: drop-shadow(5px 5px 5px #dc2626);
+        filter: drop-shadow(5px 5px 5px #6b7280);
     }
     100% {
         transform: translateY(0);
