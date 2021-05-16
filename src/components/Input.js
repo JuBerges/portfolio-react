@@ -46,7 +46,7 @@ const Input = (props) => {
                 }`}
                 onClick={() => inputRef.current.focus()}
             >
-                <label htmlFor={id} className="text-sm blackops text-black font-light placeholder-gray-400 px-2 pt-1.5">
+                <label htmlFor={id} className="text-sm blackops text-black font-light placeholder-gray-500 px-2 pt-1.5">
                     {label} {required && <span className="text-red-600">*</span>}
                 </label>
                 {textArea ? (
@@ -84,7 +84,7 @@ const Input = (props) => {
                         onClick={() => {
                             resetValue();
                         }}
-                        className="w-full px-3 py-4 text-white border-2 border-red-500 bg-red-700 rounded-md focus:bg-red-800 focus:outline-none blackops"
+                        className="w-full px-3 py-4 text-white border-4 border-green-500 bg-green-700 rounded-md hover:bg-green-800 focus:outline-none blackops"
                         type="submit"
                     >
                         ENVOYER

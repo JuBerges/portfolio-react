@@ -1,18 +1,17 @@
-import { BackButton, Input } from "../components/index";
+import { useEffect } from "react";
+import { BackButton, MusicVideo, SoundCloud, Footer } from "../components/index";
 
 function Music() {
-    return (
-        <div>
-            <BackButton />
-            <div className="text-center">
-                <form action="POST">
-                    <Input regex label="Nom" id="lastName" placeholder="Nom" required="true"></Input>
-                    <Input regex label="Prénom" id="name" placeholder="Prénom" required="true"></Input>
-                    <Input label="Email" id="lastName" type="email" placeholder="Email" required="true"></Input>
+    useEffect(() => {
+        document.title = "DEA - Music";
+    }, []);
 
-                    <button type="submit">envoyer</button>
-                </form>
-            </div>
+    return (
+        <div className="flex flex-col relative">
+            <BackButton />
+            <MusicVideo />
+            <SoundCloud />
+            <Footer />
         </div>
     );
 }
