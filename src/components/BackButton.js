@@ -9,7 +9,7 @@ function BackButton() {
 
     return (
         <div className="flex fixed top-3 left-2" title="Retour à l'accueil">
-            <Link to={ROUTES.MUSIC}>
+            <Link to={ROUTES.HOME}>
                 <button
                     onClick={() => scrollToTop()}
                     className="bg-black border-2 rounded-full px-3 py-2 border-gray-500 hover:border-white hover:text-gray-500 focus:outline-none"
