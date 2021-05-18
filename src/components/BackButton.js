@@ -8,7 +8,7 @@ function BackButton() {
     }
 
     return (
-        <div className="flex fixed top-3 left-2" title="Retour à l'accueil">
+        <div className="flex fixed top-3 left-2 z-50" title="Retour à l'accueil">
             <Link to={ROUTES.HOME}>
                 <button
                     onClick={() => scrollToTop()}
