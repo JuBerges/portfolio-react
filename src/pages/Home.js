@@ -1,18 +1,15 @@
 import { useEffect } from "react";
 
 import "../styles/Home.css";
-import { SocialNav, DeaLogo, NavBar, Footer } from "../components/index";
+import { Footer } from "../components/index";
 
 function Home() {
     useEffect(() => {
-        document.title = "DEA - Accueil";
+        document.title = "Julien Bergès | Développeur Web";
     }, []);
 
     return (
         <main className="min-h-screen flex flex-col items-center justify-center relative">
-            <SocialNav isHomePage />
-            <DeaLogo />
-            <NavBar />
             <Footer />
         </main>
     );
