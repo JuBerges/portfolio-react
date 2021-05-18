@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { BackButton, ContactForm, Footer } from "../components/index";
+import { BackButton, ContactForm, SocialNav, Footer } from "../components/index";
 
 function Contact() {
     useEffect(() => {
@@ -10,6 +10,7 @@ function Contact() {
         <div className="flex flex-col relative">
             <BackButton />
             <ContactForm />
+            <SocialNav />
             <Footer />
         </div>
     );

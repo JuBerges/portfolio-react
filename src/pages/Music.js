@@ -7,7 +7,7 @@ function Music() {
     }, []);
 
     return (
-        <div className="flex flex-col relative">
+        <div className="flex flex-col relative min-h-screen">
             <BackButton />
             <MusicVideo />
             <SoundCloud />

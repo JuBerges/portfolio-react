@@ -10,7 +10,7 @@ function Home() {
 
     return (
         <main className="min-h-screen flex flex-col items-center justify-center relative">
-            <SocialNav />
+            <SocialNav isHomePage />
             <DeaLogo />
             <NavBar />
             <Footer />

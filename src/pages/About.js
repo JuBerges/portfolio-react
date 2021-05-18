@@ -1,12 +1,13 @@
-import { BackButton, Bio, Title } from "../components/index";
+import { BackButton, Bio, Title, SocialNav } from "../components/index";
 
 function About() {
     return (
         <div>
             <BackButton />
-            <div className="text-center">
+            <div className="flex flex-col justify-center items-center">
                 <Title title="INFOS" />
                 <Bio />
+                <SocialNav />
             </div>
         </div>
     );

@@ -53,9 +53,9 @@ export default function ContactForm() {
         });
     }, []);
     return (
-        <div className="flex flex-col justify-center items-center w-full mb-5">
+        <div className="flex flex-col justify-center items-center w-full">
             <Title title="CONTACT" />
-            <form id="form" action="https://api.web3forms.com/submit" method="POST" className=" border-8 border-gray-500 rounded-xl p-2 w-11/12 md:w-2/4 mb-10">
+            <form id="form" action="https://api.web3forms.com/submit" method="POST" className=" border-8 border-gray-500 rounded-xl p-2 w-11/12 md:w-2/4">
                 <input type="hidden" name="apikey" value="1d3a0cf6-94b4-487e-95f8-5c962e575e2e" />
                 <input type="hidden" name="subject" value="DEA - Nouveau message sur votre site" />
                 <Input regex label="Nom" id="lastName" placeholder="Nom" required></Input>
