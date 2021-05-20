@@ -8,7 +8,6 @@ import logo from "../assets/images/logos/logo_white_large.png";
 export default function NavBar() {
     const [toggle, setToggle] = useState(false);
     const [music, setMusic] = useState(false);
-
     useEffect(() => {
         !music ? document.getElementById("musicTheme").pause() : document.getElementById("musicTheme").play();
     }, [music]);
@@ -63,7 +62,7 @@ export default function NavBar() {
                 </div>
             </div>
             <Fade toggle={toggle}>
-                <div className="h-16 bg-blue-900 flex justify-center items-center p-2 border-4 border-t-0  border-blue-500">
+                <div className="lg:hidden h-16 bg-blue-900 flex justify-center items-center p-2 border-4 border-t-0  border-blue-500">
                     <div>
                         <Link to={ROUTES.HOME}>
                             <Button value="ACCUEIL" scrollTop={scrollTop} toggleNav={toggleNav} />

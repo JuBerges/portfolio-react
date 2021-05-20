@@ -55,6 +55,7 @@
         transform: translateY(0);
     }
 }
+/* RESPONSIVE NAVBAR TRANSITION */
 .fade {
     transition: ease-in-out 100ms;
     transform: scaleY(0);
@@ -63,4 +64,14 @@
 
 .fade.out {
     transform: scale3d(1, 1, 1);
+}
+/* COAT TEXT */
+.coated {
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+/* FOR THE LITTLE MUG */
+#tilter {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }

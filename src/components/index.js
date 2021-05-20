@@ -1,9 +1,14 @@
 export { default as Button } from "../components/Button";
 export { default as ContactForm } from "../components/ContactForm";
+export { default as ContactHome } from "./ContactHome";
+export { default as HomeContent } from "./HomeContent";
 export { default as Fade } from "../components/Fade";
 export { default as Footer } from "../components/Footer";
 export { default as Input } from "../components/Input";
+export { default as LinkBar } from "../components/LinkBar";
 export { default as Loader } from "../components/Loader";
+export { default as Mug } from "../components/Mug";
 export { default as NavBar } from "../components/NavBar";
 export { default as NavMenu } from "../components/NavMenu";
+export { default as Tech } from "../components/Tech";
 export { default as Title } from "../components/Title";
