@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 
-const Input = (props) => {
+export default function Input(props) {
     const [inputValue, setInputValue] = useState("");
     const [isRequired, setIsRequired] = useState("");
     const {
@@ -93,6 +93,4 @@ const Input = (props) => {
             )}
         </div>
     );
-};
-
-export default Input;
+}

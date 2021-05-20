@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import "../styles/Home.css";
-import { Title, Footer } from "../components/index";
+import { Title } from "../components/index";
 
 export default function Home() {
     useEffect(() => {
@@ -11,7 +11,6 @@ export default function Home() {
     return (
         <main className="min-h-screen flex flex-col items-center justify-center relative">
             <Title title="HOME" />
-            <Footer />
         </main>
     );
 }

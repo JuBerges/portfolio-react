@@ -1,6 +1,3 @@
-button {
-    padding: 10px 30px;
-}
 .mod {
     filter: contrast(75%);
     filter: drop-shadow(10px 10px 0px #6b7280);
@@ -57,4 +54,13 @@ button {
     to {
         transform: translateY(0);
     }
+}
+.fade {
+    transition: ease-in-out 100ms;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.fade.out {
+    transform: scale3d(1, 1, 1);
 }
