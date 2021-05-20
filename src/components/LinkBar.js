@@ -8,7 +8,7 @@ export default function LinkBar() {
     }
 
     return (
-        <div class="w-full glass h-20 border-blue-500 border-t border-b flex justify-center items-center">
+        <div className="w-full glass h-20 border-blue-500 border-t border-b flex justify-center items-center">
             <Link to={ROUTES.PORTFOLIO}>
                 <div onClick={() => scrollTop()}>
                     <Button value="Portfolio" />
