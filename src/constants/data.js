@@ -20,7 +20,7 @@ export const PROJECTS = [
     {
         id: 3,
         name: "Mon Portfolio V.1",
-        text: "Créé à la base avec VueJS que j'ai appris à utiliser pendant ma formation, j'ai décidé de le refaire à l'indentique avec React que j'apprend en autodidacte. Cliquez sur le titre du projet pour voir le code source.",
+        text: "Créé à la base avec VueJS que j'ai appris à utiliser pendant ma formation, j'ai décidé de le refaire à l'identique avec React que j'apprends en autodidacte. Cliquez sur le titre du projet pour voir le code source.",
         images: ["https://julien-berges.fr/projects/pf_1.png"],
         tech: "HTML5, CSS3, tailwindCSS, React.",
         video: "",

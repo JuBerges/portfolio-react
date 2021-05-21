@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import * as DATA from "../constants/data";
 import { Button } from "../components/index";
@@ -10,9 +9,9 @@ export default function PortfolioDisplay() {
     return DATA.PROJECTS.map((pro) => (
         <article key={pro.id}>
             <h2 className="mt-10 mb-4 text-center text-3xl sm:text-5xl text-blue-500 uppercase font-bold coated">
-                <Link to={pro.link} target="_blank">
+                <a href={pro.link} rel="noreferrer" target="_blank">
                     <i className="fas fa-chevron-left"></i> {pro.name} <i className="fas fa-chevron-right"></i>
-                </Link>
+                </a>
             </h2>
             <div className="bg-black bg-transparent bg-opacity-50 text-white mx-2 sm:w-2/3 sm:mx-auto border-4 border-blue-500 rounded-lg">
                 <div className="p-2">
@@ -35,9 +34,9 @@ export default function PortfolioDisplay() {
                         <video controls src={pro.video} className="h-full w-full px-2"></video>
                         <p className="px-2 text-xs text-center">
                             Musique:{" "}
-                            <Link to="https://www.youtube.com/channel/UC7Lah4xMT_IFjq1axEcXcAA" target="_blank" className="text-blue-500 uppercase font-bold">
+                            <a href="https://www.youtube.com/channel/UC7Lah4xMT_IFjq1axEcXcAA" rel="noreferrer" target="_blank" className="text-blue-500 uppercase font-bold">
                                 Sphinks
-                            </Link>
+                            </a>
                         </p>
                     </div>
                 ) : (
