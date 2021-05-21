@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Title } from "../components/index";
+import { Mug, PortfolioDisplay } from "../components/index";
 
 function Music() {
     useEffect(() => {
@@ -8,7 +8,9 @@ function Music() {
 
     return (
         <div className="flex flex-col justify-center items-center relative min-h-screen">
-            <Title title="PORTFOLIO" />
+            <h1 className="text-white glow font-extrabold text-6xl text-center mt-24 uppercase">PROJETS réalisés</h1>
+            <PortfolioDisplay />
+            <Mug />
         </div>
     );
 }

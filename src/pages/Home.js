@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import "../styles/Home.css";
-import { ContactHome, HomeContent, LinkBar, Tech } from "../components/index";
+import { ContactHome, HomeContent, LinkBar, Mug, Tech } from "../components/index";
 
 export default function Home() {
     useEffect(() => {
@@ -14,6 +14,7 @@ export default function Home() {
             <Tech />
             <LinkBar />
             <ContactHome />
+            <Mug />
         </main>
     );
 }

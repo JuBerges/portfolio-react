@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import { Button, Fade } from "../components/index";
+import { Button } from "../components/index";
 import * as ROUTES from "../constants/routes";
 import logo from "../assets/images/logos/logo_white_large.png";
 
@@ -61,7 +61,7 @@ export default function NavBar() {
                     <i className="fas fa-bars"></i>
                 </div>
             </div>
-            <Fade toggle={toggle}>
+            {toggle && (
                 <div className="lg:hidden h-16 bg-blue-900 flex justify-center items-center p-2 border-4 border-t-0  border-blue-500">
                     <div>
                         <Link to={ROUTES.HOME}>
@@ -79,7 +79,7 @@ export default function NavBar() {
                         </Link>
                     </div>
                 </div>
-            </Fade>
+            )}
         </header>
     );
 }
