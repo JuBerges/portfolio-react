@@ -5,6 +5,7 @@ import ImageDisplay from "./ImageDisplay";
 
 export default function PortfolioDisplay() {
     const [toggleModal, setToggleModal] = useState(false);
+    const [project, setProject] = useState("");
 
     return DATA.PROJECTS.map((pro) => (
         <article key={pro.id}>
@@ -41,7 +42,14 @@ export default function PortfolioDisplay() {
                     </div>
                 ) : (
                     <div className="flex justify-center">
-                        <img onClick={() => setToggleModal(!toggleModal)} src={pro.images[0]} alt="illustation de projet" />
+                        <img
+                            onClick={() => {
+                                setToggleModal(!toggleModal);
+                                setProject(pro.images);
+                            }}
+                            src={pro.images[0]}
+                            alt="illustation de projet"
+                        />
                     </div>
                 )}
                 <div className="h-1 bg-blue-500"></div>
@@ -50,7 +58,12 @@ export default function PortfolioDisplay() {
                         {!toggleModal && (
                             <div>
                                 <div className="p-2 bg-blue-500 w-full flex justify-center">
-                                    <div onClick={() => setToggleModal(!toggleModal)}>
+                                    <div
+                                        onClick={() => {
+                                            setToggleModal(!toggleModal);
+                                            setProject(pro.images);
+                                        }}
+                                    >
                                         <Button value="Ouvrir Galerie" />
                                     </div>
                                 </div>
@@ -65,7 +78,7 @@ export default function PortfolioDisplay() {
                                     <div className="flex">
                                         <div id="imageScroll" className="p-2 max-h-96 overflow-scroll text-white ">
                                             {/* <!-- ICI --> */}
-                                            <ImageDisplay images={pro.images} />
+                                            <ImageDisplay images={project} />
                                         </div>
                                         <div className="flex-col self-center">
                                             <i className="fas fa-arrow-up my-5"></i>
