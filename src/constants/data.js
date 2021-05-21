@@ -19,6 +19,15 @@ export const PROJECTS = [
     },
     {
         id: 3,
+        name: "Mon Portfolio V.1",
+        text: "Créé à la base avec VueJS que j'ai appris à utiliser pendant ma formation, j'ai décidé de le refaire à l'indentique avec React que j'apprend en autodidacte. Cliquez sur le titre du projet pour voir le code source.",
+        images: ["https://julien-berges.fr/projects/pf_1.png"],
+        tech: "HTML5, CSS3, tailwindCSS, React.",
+        video: "",
+        link: "https://github.com/WadeSpectre/portfolio-react",
+    },
+    {
+        id: 4,
         name: "groupomania",
         text: "Ce projet réalisé pendant ma formation de développeur web, consistait à créer un réseau social d'entreprise afin d'améliorer l'ambiance entre les employés",
         tech: "HTML5, CSS3, TailwindCSS, JavaScript, NodeJS, VueJS et MySQL.",
@@ -32,7 +41,7 @@ export const PROJECTS = [
         link: "https://github.com/WadeSpectre/P7_Groupomania",
     },
     {
-        id: 4,
+        id: 5,
         name: "orinoco",
         text: "Un autre projet réalisé pendant ma formation de développeur web, il fallait cette fois créer le côté frontend d'un site de vente en ligne en utilisant boostrap et du JavaScript.",
         tech: "HTML5, CSS3, Bootstrap et JavaScript.",
@@ -46,7 +55,7 @@ export const PROJECTS = [
         link: "https://github.com/WadeSpectre/P5_Onorico",
     },
     {
-        id: 5,
+        id: 6,
         name: "ohmyfood",
         text: "Ce projet à été réalisé avec comme objectif de mettre en pratique l'utilisation de Sass et d'animations CSS. Cliquez sur le titre du projet pour voir le résultat.",
         images: [
@@ -60,7 +69,7 @@ export const PROJECTS = [
         link: "https://wadespectre.github.io/JulienBerges_3_22092020/",
     },
     {
-        id: 6,
+        id: 7,
         name: "reservia",
         text: "Mon tout premier projet réalisé seulement en HTML et CSS sans framework. Cliquez sur le titre du projet pour voir le résultat.",
         images: [
