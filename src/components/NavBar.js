@@ -27,7 +27,13 @@ export default function NavBar() {
             <div id="nav" className="flex justify-between bg-blue-900 h-16 border-b-4 border-blue-500">
                 <div className="mt-2 flex">
                     <Link to={ROUTES.HOME}>
-                        <div className="ml-2 lg:ml-4 flex min-w-max" onClick={() => scrollTop()}>
+                        <div
+                            className="ml-2 lg:ml-4 flex min-w-max"
+                            onClick={() => {
+                                scrollTop();
+                                toggle && setToggle(!toggle);
+                            }}
+                        >
                             <img className="h-11" src={logo} alt="logo de julien bergès" />
                         </div>
                     </Link>

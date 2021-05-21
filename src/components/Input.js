@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { useRef } from "react";
 
+import { Button } from "../components/index";
+
 export default function Input(props) {
     const [inputValue, setInputValue] = useState("");
     const [isRequired, setIsRequired] = useState("");
@@ -42,11 +44,11 @@ export default function Input(props) {
         <div className={`m-2 ${wrapperClassName}`}>
             <div
                 className={`border-4 bg-white rounded-md transition duration-500 ease-in-out ${
-                    error ? "focus-within:border-red-600 border-red-600" : "focus-within:border-green-500 border-gray-500"
+                    error ? "focus-within:border-red-600 border-red-600" : "focus-within:border-green-500 border-blue-500"
                 }`}
                 onClick={() => inputRef.current.focus()}
             >
-                <label htmlFor={id} className="text-sm blackops text-black font-light placeholder-gray-500 px-2 pt-1.5">
+                <label htmlFor={id} className="text-sm text-black font-bold placeholder-gray-500 px-2 pt-1.5">
                     {label} {required && <span className="text-red-600">*</span>}
                 </label>
                 {textArea ? (
@@ -57,7 +59,7 @@ export default function Input(props) {
                         value={inputValue}
                         onChange={(e) => (regex ? checkValue(e.target.value) : setInputValue(e.target.value))}
                         ref={inputRef}
-                        className="w-full px-2 pb-1.5 text-gray-900 outline-none text-base font-light rounded-md blackops"
+                        className="w-full px-2 pb-1.5 text-gray-900 outline-none text-base font-light rounded-md"
                         id={id}
                         placeholder={placeholder}
                         {...rest}
@@ -70,7 +72,7 @@ export default function Input(props) {
                         onChange={(e) => (regex ? checkValue(e.target.value) : setInputValue(e.target.value))}
                         ref={inputRef}
                         type={type}
-                        className="w-full px-2 pb-1.5 text-gray-900 outline-none text-base font-light rounded-md blackops"
+                        className="w-full px-2 pb-1.5 text-gray-900 outline-none text-base font-light rounded-md"
                         id={id}
                         placeholder={placeholder}
                         {...rest}
@@ -79,16 +81,14 @@ export default function Input(props) {
             </div>
             {errorText && <p className="text-xs pl-2 text-red-600 mb-4">{errorText}</p>}
             {lastOne && (
-                <div className="flex flex-col p-4 bg-black">
-                    <button
+                <div className="flex flex-col p-4 items-center">
+                    <div
                         onClick={() => {
                             resetValue();
                         }}
-                        className="w-full px-3 py-4 text-white border-4 border-green-500 bg-green-700 rounded-md hover:bg-green-800 focus:outline-none blackops"
-                        type="submit"
                     >
-                        ENVOYER
-                    </button>
+                        <Button big value="ENVOYER" />
+                    </div>
                 </div>
             )}
         </div>

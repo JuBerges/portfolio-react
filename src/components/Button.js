@@ -1,8 +1,7 @@
 import "../styles/Button.css";
 
 export default function Button(props) {
-    const { value = "click me", toggleNav = () => {}, scrollTop = () => {} } = props;
-
+    const { value = "click me", big = "", toggleNav = () => {}, scrollTop = () => {} } = props;
     return (
         <button
             onClick={() => {
@@ -13,7 +12,7 @@ export default function Button(props) {
         >
             <span className="shadow"></span>
             <span className="edge"></span>
-            <span className="front p-2">{value}</span>
+            <span className={`front ${big ? "p-4" : "p-2"}`}>{value}</span>
         </button>
     );
 }

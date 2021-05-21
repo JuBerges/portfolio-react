@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-import { Title } from "../components/index";
+import { ContactForm } from "../components/index";
 
 function Contact() {
     useEffect(() => {
@@ -8,7 +8,7 @@ function Contact() {
     }, []);
     return (
         <div className="flex flex-col justify-center items-center min-h-screen relative">
-            <Title title="CONTACT" />
+            <ContactForm />
         </div>
     );
 }
