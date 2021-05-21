@@ -69,7 +69,16 @@ body {
         }
     }
 }
-
+/* COAT TEXT */
+.coated {
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+/* FOR THE LITTLE MUG */
+#tilter {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
 /* CODE EXTRACT FOR VIOLET GLOW */
 /* .glow {
     color: #fff;
