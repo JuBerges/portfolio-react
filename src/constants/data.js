@@ -1,5 +1,6 @@
 export const PROJECTS = [
     {
+        id: 1,
         name: "dea",
         text: '[En construction] Site vitrine pour le rappeur "DEA". Cliquez sur le titre du projet pour voir le site.',
         images: ["https://julien-berges.fr/projects/dea_1.png", "https://julien-berges.fr/projects/dea_2.png", "https://julien-berges.fr/projects/dea_3.png"],
@@ -8,6 +9,7 @@ export const PROJECTS = [
         link: "https://dea.julien-berges.fr/",
     },
     {
+        id: 2,
         name: "sphinks",
         text: '[En construction] Site vitrine pour le compositeur "Sphinks". Cliquez sur le titre du projet pour voir le site.',
         images: ["https://julien-berges.fr/projects/sph_1.png", "https://julien-berges.fr/projects/sph_2.png", "https://julien-berges.fr/projects/sph_3.png"],
@@ -16,6 +18,7 @@ export const PROJECTS = [
         link: "https://sphinks.julien-berges.fr/",
     },
     {
+        id: 3,
         name: "groupomania",
         text: "Ce projet réalisé pendant ma formation de développeur web, consistait à créer un réseau social d'entreprise afin d'améliorer l'ambiance entre les employés",
         tech: "HTML5, CSS3, TailwindCSS, JavaScript, NodeJS, VueJS et MySQL.",
@@ -29,6 +32,7 @@ export const PROJECTS = [
         link: "https://github.com/WadeSpectre/P7_Groupomania",
     },
     {
+        id: 4,
         name: "orinoco",
         text: "Un autre projet réalisé pendant ma formation de développeur web, il fallait cette fois créer le côté frontend d'un site de vente en ligne en utilisant boostrap et du JavaScript.",
         tech: "HTML5, CSS3, Bootstrap et JavaScript.",
@@ -42,6 +46,7 @@ export const PROJECTS = [
         link: "https://github.com/WadeSpectre/P5_Onorico",
     },
     {
+        id: 5,
         name: "ohmyfood",
         text: "Ce projet à été réalisé avec comme objectif de mettre en pratique l'utilisation de Sass et d'animations CSS. Cliquez sur le titre du projet pour voir le résultat.",
         images: [
@@ -55,6 +60,7 @@ export const PROJECTS = [
         link: "https://wadespectre.github.io/JulienBerges_3_22092020/",
     },
     {
+        id: 6,
         name: "reservia",
         text: "Mon tout premier projet réalisé seulement en HTML et CSS sans framework. Cliquez sur le titre du projet pour voir le résultat.",
         images: [
