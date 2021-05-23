@@ -87,7 +87,7 @@ export default function Input(props) {
                             resetValue();
                         }}
                     >
-                        <Button big value="ENVOYER" />
+                        <Button big value="ENVOYER" noScroll />
                     </div>
                 </div>
             )}

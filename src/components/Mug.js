@@ -1,12 +1,9 @@
 import mug from "../assets/images/code-coffee.png";
 import { Link } from "react-router-dom";
 import * as ROUTES from "../constants/routes";
+import scrollTop from "../utilities/scrollTop";
 
 export default function Mug() {
-    function scrollTop() {
-        window.scrollTo(0, 0);
-    }
-
     return (
         <div>
             <Link onClick={() => scrollTop()} to={ROUTES.CONTACT}>

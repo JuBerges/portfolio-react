@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import { Button } from "../components/index";
+import scrollTop from "../utilities/scrollTop";
 import * as ROUTES from "../constants/routes";
 import logo from "../assets/images/logos/logo_white_large.png";
 
@@ -18,9 +19,6 @@ export default function NavBar() {
 
     function muteMusic() {
         music ? setMusic(false) : setMusic(true);
-    }
-    function scrollTop() {
-        window.scrollTo(0, 0);
     }
     return (
         <header className=" fixed w-full z-50">
@@ -54,13 +52,13 @@ export default function NavBar() {
                 </div>
                 <div className="hidden lg:flex mr-2 h-11 mt-2 lg:items-center">
                     <Link to={ROUTES.HOME}>
-                        <Button value="ACCUEIL" scrollTop={scrollTop} />
+                        <Button value="ACCUEIL" />
                     </Link>
                     <Link to={ROUTES.PORTFOLIO}>
-                        <Button value="PORTFOLIO" scrollTop={scrollTop} />
+                        <Button value="PORTFOLIO" />
                     </Link>
                     <Link to={ROUTES.CONTACT}>
-                        <Button value="CONTACT" scrollTop={scrollTop} />
+                        <Button value="CONTACT" />
                     </Link>
                 </div>
                 <div onClick={() => toggleNav()} className="flex lg:hidden router bg-white p-2 items-center border-blue-500 border-l-4 px-6 cursor-pointer">
@@ -71,17 +69,17 @@ export default function NavBar() {
                 <div className="lg:hidden h-16 bg-blue-900 flex justify-center items-center p-2 border-4 border-t-0  border-blue-500">
                     <div>
                         <Link to={ROUTES.HOME}>
-                            <Button value="ACCUEIL" scrollTop={scrollTop} toggleNav={toggleNav} />
+                            <Button value="ACCUEIL" toggleNav={toggleNav} />
                         </Link>
                     </div>
                     <div>
                         <Link to={ROUTES.PORTFOLIO}>
-                            <Button value="PORTFOLIO" scrollTop={scrollTop} toggleNav={toggleNav} />
+                            <Button value="PORTFOLIO" toggleNav={toggleNav} />
                         </Link>
                     </div>
                     <div>
                         <Link to={ROUTES.CONTACT}>
-                            <Button value="CONTACT" scrollTop={scrollTop} toggleNav={toggleNav} />
+                            <Button value="CONTACT" toggleNav={toggleNav} />
                         </Link>
                     </div>
                 </div>

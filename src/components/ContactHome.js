@@ -4,10 +4,6 @@ import coffee from "../assets/images/code-coffee.png";
 import { Button } from "../components/index";
 
 export default function ContactHome() {
-    function scrollTop() {
-        window.scrollTo(0, 0);
-    }
-
     return (
         <section id="contact">
             <div className="flex justify-around flex-wrap jello-horizontal">
@@ -19,7 +15,7 @@ export default function ContactHome() {
                         de
                         <span className="text-blue-500">votre projet.</span>
                     </h1>
-                    <div className="flex flex-col mt-5 items-center" onClick={() => scrollTop()}>
+                    <div className="flex flex-col mt-5 items-center">
                         <Link to={ROUTES.CONTACT}>
                             <Button value="CLIQUEZ ICI" />
                         </Link>

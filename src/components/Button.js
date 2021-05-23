@@ -1,12 +1,13 @@
 import "../styles/Button.css";
+import scrollTop from "../utilities/scrollTop";
 
 export default function Button(props) {
-    const { value = "click me", big = "", toggleNav = () => {}, scrollTop = () => {} } = props;
+    const { value = "click me", big = "", toggleNav = () => {}, noScroll } = props;
     return (
         <button
             onClick={() => {
                 toggleNav();
-                scrollTop();
+                !noScroll && scrollTop();
             }}
             className="pushable mx-2"
         >
