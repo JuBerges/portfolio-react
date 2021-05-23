@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 
-import "../styles/Home.css";
 import { ContactHome, HomeContent, LinkBar, Mug, Tech } from "../components/index";
 
 export default function Home() {
