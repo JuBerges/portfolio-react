@@ -17,9 +17,6 @@ export default function NavBar() {
         !toggle ? setToggle(true) : setToggle(false);
     }
 
-    function muteMusic() {
-        music ? setMusic(false) : setMusic(true);
-    }
     return (
         <header className=" fixed w-full z-50">
             <div id="nav" className="flex justify-between bg-blue-900 h-16 border-b-4 border-blue-500">
@@ -40,11 +37,11 @@ export default function NavBar() {
                     </div>
                     <div className="flex pb-2">
                         {music ? (
-                            <button title="Arrêter la musique" className="mx-4 text-white hover:text-red-500 animate-pulse focus:outline-none" onClick={() => muteMusic()}>
+                            <button title="Arrêter la musique" className="mx-4 text-white hover:text-red-500 animate-pulse focus:outline-none" onClick={() => setMusic(!music)}>
                                 <i className="fas fa-volume-up fa-lg"></i>
                             </button>
                         ) : (
-                            <button title="Jouer la musique" className="mx-4 text-white hover:text-green-500 animate-pulse focus:outline-none" onClick={() => muteMusic()}>
+                            <button title="Jouer la musique" className="mx-4 text-white hover:text-green-500 animate-pulse focus:outline-none" onClick={() => setMusic(!music)}>
                                 <i className="fas fa-volume-mute fa-lg"></i>
                             </button>
                         )}
