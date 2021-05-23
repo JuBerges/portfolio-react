@@ -21,17 +21,17 @@ export default function NavBar() {
         <header className=" fixed w-full z-50">
             <div id="nav" className="flex justify-between bg-blue-900 h-16 border-b-4 border-blue-500">
                 <div className="mt-2 flex">
-                    <Link to={ROUTES.HOME}>
-                        <div
-                            className="ml-2 lg:ml-4 flex min-w-max"
-                            onClick={() => {
-                                scrollTop();
-                                toggle && setToggle(!toggle);
-                            }}
-                        >
+                    <div
+                        className="ml-2 lg:ml-4 flex min-w-max"
+                        onClick={() => {
+                            scrollTop();
+                            toggle && setToggle(!toggle);
+                        }}
+                    >
+                        <Link to={ROUTES.HOME}>
                             <img className="h-11" src={logo} alt="logo de julien bergès" />
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                     <div>
                         <audio id="musicTheme" src="https://julien-berges.fr/music/sphinks-cybernight.mp3"></audio>
                     </div>
