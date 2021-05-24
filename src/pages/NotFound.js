@@ -7,7 +7,7 @@ function NotFound() {
         <div className="h-screen flex flex-col justify-center items-center">
             <h1 className="text-7xl text-blue-500 coated text-center">404 PAGE INTROUVABLE</h1>
             <Link to={ROUTES.HOME}>
-                <Button value="RETOUR" big />
+                <Button big>RETOUR</Button>
             </Link>
         </div>
     );

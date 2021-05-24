@@ -49,13 +49,13 @@ export default function NavBar() {
                 </div>
                 <div className="hidden lg:flex mr-2 h-11 mt-2 lg:items-center">
                     <Link to={ROUTES.HOME}>
-                        <Button value="ACCUEIL" />
+                        <Button>ACCUEIL</Button>
                     </Link>
                     <Link to={ROUTES.PORTFOLIO}>
-                        <Button value="PORTFOLIO" />
+                        <Button>PORTFOLIO</Button>
                     </Link>
                     <Link to={ROUTES.CONTACT}>
-                        <Button value="CONTACT" />
+                        <Button>CONTACT</Button>
                     </Link>
                 </div>
                 <div onClick={() => toggleNav()} className="flex lg:hidden router bg-white p-2 items-center border-blue-500 border-l-4 px-6 cursor-pointer">
@@ -66,17 +66,17 @@ export default function NavBar() {
                 <div className="lg:hidden h-16 bg-blue-900 flex justify-center items-center p-2 border-4 border-t-0  border-blue-500">
                     <div>
                         <Link to={ROUTES.HOME}>
-                            <Button value="ACCUEIL" toggleNav={toggleNav} />
+                            <Button toggleNav={toggleNav}>ACCUEIL</Button>
                         </Link>
                     </div>
                     <div>
                         <Link to={ROUTES.PORTFOLIO}>
-                            <Button value="PORTFOLIO" toggleNav={toggleNav} />
+                            <Button toggleNav={toggleNav}>PORTFOLIO</Button>
                         </Link>
                     </div>
                     <div>
                         <Link to={ROUTES.CONTACT}>
-                            <Button value="CONTACT" toggleNav={toggleNav} />
+                            <Button toggleNav={toggleNav}>CONTACT</Button>
                         </Link>
                     </div>
                 </div>

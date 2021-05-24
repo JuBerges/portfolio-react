@@ -64,7 +64,7 @@ export default function PortfolioDisplay() {
                                             setProject(pro.images);
                                         }}
                                     >
-                                        <Button value="Ouvrir Galerie" />
+                                        <Button>Ouvrir Galerie</Button>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@ export default function PortfolioDisplay() {
                                     <div>
                                         <div className="p-2 bg-blue-500 w-full flex justify-center">
                                             <div onClick={() => setToggleModal(!toggleModal)}>
-                                                <Button value="Fermer" />
+                                                <Button>Fermer</Button>
                                             </div>
                                         </div>
                                     </div>

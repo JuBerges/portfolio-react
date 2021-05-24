@@ -17,7 +17,7 @@ export default function ContactHome() {
                     </h1>
                     <div className="flex flex-col mt-5 items-center">
                         <Link to={ROUTES.CONTACT}>
-                            <Button value="CLIQUEZ ICI" />
+                            <Button>CLIQUEZ ICI</Button>
                         </Link>
                     </div>
                 </div>
